@@ -300,13 +300,13 @@ static const char PROGMEM INDEX_HTML[] = R"rawliteral(
             <section id="buttons">
                 <table>
                 <tr><td align="center"><button id="get-still"></button></tr>
-                <tr><td><input type="checkbox" id="nostop" onclick="var noStop=0;if (this.checked) noStop=1;fetch(document.location.origin+'/control?var=nostop&val='+noStop);">Don't Stop</td><td align="center"><button id="forward" onclick="fetch(document.location.origin+'/control?var=car&val=1');">Вперед</button></td><td align="right"><button id="toggle-stream">Вкл</button></td></tr></tr>
-                <tr><td align="center"><button id="turnleft" onclick="fetch(document.location.origin+'/control?var=car&val=2');">Налево</button></td><td align="center"><button id="stop" onclick="fetch(document.location.origin+'/control?var=car&val=3');">Стоп</button></td><td align="center"><button id="turnright" onclick="fetch(document.location.origin+'/control?var=car&val=4');">Направо</button></td></tr>
-                <tr><td></td><td align="center"><button id="backward" onclick="fetch(document.location.origin+'/control?var=car&val=5');">Назад</button></td><td></td></tr>
-                <tr><td>Манипулятор ←→</td><td align="center" colspan="2"><input type="range" id="man1" min="0" max="100" value="50" onchange="try{fetch(document.location.origin+'/control?var=man1&val='+this.value);}catch(e){}"></td></tr>
-                <tr><td>Манипулятор ↑↓ 1</td><td align="center" colspan="2"><input type="range" id="man2" min="0" max="100" value="50" onchange="try{fetch(document.location.origin+'/control?var=man2&val='+this.value);}catch(e){}"></td></tr>
-                <tr><td>Манипулятор ↑↓ 2</td><td align="center" colspan="2"><input type="range" id="man3" min="0" max="100" value="50" onchange="try{fetch(document.location.origin+'/control?var=man3&val='+this.value);}catch(e){}"></td></tr>
-                <tr><td>Манипулятор зажим</td><td align="center" colspan="2"><input type="range" id="man4" min="0" max="100" value="0" onchange="try{fetch(document.location.origin+'/control?var=man4&val='+this.value);}catch(e){}"></td></tr>
+                <tr><td><input type="checkbox" id="nostop" onclick="var noStop=0;if (this.checked) noStop=1;fetch(document.location.origin+'/control?var=nostop&val='+noStop);">Don't Stop</td><td align="center"><button id="forward" onclick="fetch(document.location.origin+'/control?var=car&val=1');">Forward</button></td><td align="right"><button id="toggle-stream">On</button></td></tr></tr>
+                <tr><td align="center"><button id="turnleft" onclick="fetch(document.location.origin+'/control?var=car&val=2');">Left</button></td><td align="center"><button id="stop" onclick="fetch(document.location.origin+'/control?var=car&val=3');">Stop</button></td><td align="center"><button id="turnright" onclick="fetch(document.location.origin+'/control?var=car&val=4');">Right</button></td></tr>
+                <tr><td></td><td align="center"><button id="backward" onclick="fetch(document.location.origin+'/control?var=car&val=5');">Backward</button></td><td></td></tr>
+                <tr><td>Manipulator ←→</td><td align="center" colspan="2"><input type="range" id="man1" min="0" max="100" value="50" onchange="try{fetch(document.location.origin+'/control?var=man1&val='+this.value);}catch(e){}"></td></tr>
+                <tr><td>Manipulator ↑↓ 1</td><td align="center" colspan="2"><input type="range" id="man2" min="0" max="100" value="50" onchange="try{fetch(document.location.origin+'/control?var=man2&val='+this.value);}catch(e){}"></td></tr>
+                <tr><td>Manipulator ↑↓ 2</td><td align="center" colspan="2"><input type="range" id="man3" min="0" max="100" value="50" onchange="try{fetch(document.location.origin+'/control?var=man3&val='+this.value);}catch(e){}"></td></tr>
+                <tr><td>Manipulator clip</td><td align="center" colspan="2"><input type="range" id="man4" min="0" max="100" value="0" onchange="try{fetch(document.location.origin+'/control?var=man4&val='+this.value);}catch(e){}"></td></tr>
                   </table>
             </section>         
         </section>
