@@ -1,4 +1,4 @@
-const char* ssid = "WIFI CAR";
+const char* ssid = "ESP CAR";
 const char* password = "12345678";
 
 #include "esp_wifi.h"
